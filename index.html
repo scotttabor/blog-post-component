@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            yellow: '#F4D04E',
+            black: '#111111',
+            white: '#FFFFFF',
+            grey: '#7F7F7F'
+          },
+          boxShadow: {
+            cust: '9px 9px 0px 0px rgba(0,0,0,1);'
+          }
+        }
+      }
+    }
+  </script>
+  <title>Frontend Mentor | Blog preview card</title>
+
+
+<body>
+  <main class="flex justify-center items-center h-screen px-7 bg-yellow">
+    <div class="card p-6 rounded-2xl border border-black bg-white shadow-cust md: max-w-96">
+      <div class="image h-2/5 mb-6">
+        <img class="w-full rounded-xl" src="./assets/images/illustration-article.svg" alt="illustration-article">
+      </div>
+      <div class="content h-3/5">
+        <p class="bg-yellow inline-block text-xs px-3 py-1 rounded font-bold text-center mb-4">Learning</p>
+        <p class="text-xs mb-4">Published 21 Dec 2023</p>
+        <h1 class="text-xl font-bold mb-4">HTML and CSS Foundations</h1>
+        <p class="text-sm text-grey leading-5 mb-5">These languages are the backbone of every website, defining
+          structure,
+          content,
+          and
+          presentation.</p>
+        <div class="profile-card flex items-center">
+          <img class='w-8 mr-3' src="./assets/images/image-avatar.webp" alt="User Greg Hooper">
+          <p class="font-bold">Greg Hooper</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
